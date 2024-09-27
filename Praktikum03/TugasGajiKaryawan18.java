@@ -1,8 +1,5 @@
 package Praktikum03;
-import java.sql.SQLOutput;
 import java.util.Scanner;
-
-import javax.sound.sampled.SourceDataLine;
 public class TugasGajiKaryawan18 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
@@ -11,7 +8,7 @@ public class TugasGajiKaryawan18 {
 
         upahperjam = 10000;
 
-        System.out.println("Masukkan jumlah jam kerja anda: ");
+        System.out.print("Masukkan jumlah jam kerja anda: ");
         jamkerja = sc.nextInt();
         totalgajikotor = upahperjam * jamkerja;
 

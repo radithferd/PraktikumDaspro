@@ -7,10 +7,10 @@ public class Bank18 {
         int lamaMenabung;
 
         presentaseBunga = 0.0002;
-        System.out.println("Masukkan jumlah tabungan awal: ");
+        System.out.print("Masukkan jumlah tabungan awal: ");
 
         tabunganAwal = sc.nextDouble();
-        System.out.println("Masukkan lama menabung (bulan): ");
+        System.out.print("Masukkan lama menabung (bulan): ");
         
         lamaMenabung = sc.nextInt();
         bunga = presentaseBunga * lamaMenabung * tabunganAwal;

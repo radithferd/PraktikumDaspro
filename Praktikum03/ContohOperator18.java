@@ -1,12 +1,16 @@
-package Praktikum03;
+//package Praktikum03;
 
 public class ContohOperator18 {
     public static void main(String[] args) {
         int x = 2;
+        x++;
+        x++;
         System.out.println("Nilai x++ adalah " + x++);
         System.out.println("Setelah operasi, nilai x adalah " + x);
 
-        int y = 7;
+        int y = 10;
+        y++;
+        y--;
         System.out.println("Nilai y++ adalah " + ++y);
         System.out.println("Setelah operasi, nilai y adalah " + y);
 

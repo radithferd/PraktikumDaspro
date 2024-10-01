@@ -1,4 +1,4 @@
-package Praktikum03;
+//package Praktikum03;
 import java.util.Scanner;
 public class TugasGajiKaryawan18 {
     public static void main(String[] args) {

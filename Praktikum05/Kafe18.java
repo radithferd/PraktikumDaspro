@@ -13,10 +13,13 @@ public class Kafe18 {
 
         System.out.print("Masukkan menu: ");
         menu = sc.nextLine();
+
         System.out.print("Masukkan ukuran cup: ");
         ukuranCup = sc.next().charAt(0);
+
         System.out.print("Masukkan jumlah: ");
         jumlah = sc.nextInt();
+
         System.out.print("Masukkan keanggotaan (true/false): ");
         keanggotaan = sc.nextBoolean();
         
@@ -43,6 +46,10 @@ public class Kafe18 {
             case 'L':
                 totalHarga += 0.4 * totalHarga;
                 break;
+            default:
+                System.out.println("size yang dipilih tidak tersedia");
+                sc.close();
+                return;
         }
         double diskon = keanggotaan ? 0 : 0.1;
         double nominalBayar = totalHarga - (diskon * totalHarga);

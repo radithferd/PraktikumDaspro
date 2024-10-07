@@ -7,40 +7,41 @@ public class Tugas02 {
     Scanner sc = new Scanner (System.in);
 
     String hari, jenisBuku;
-    int jumlahBuku;
-    double diskon, totalDiskon;
+    int jumlahBuku; 
+    double diskon=0;
 
-    System.out.println("Masukkan hari ini : ");
+    System.out.print("Masukkan hari ini : ");
     hari = sc.nextLine();
+    System.out.print("Masukkan jenis buku : ");
+    jenisBuku = sc.nextLine();
+    System.out.print("Masukkan jumlah buku ");
+    jumlahBuku = sc.nextInt();
 
     if (hari.equalsIgnoreCase("rabu")) {
-        System.out.println("Masukkan jenis buku ");
-        jenisBuku = sc.nextLine();
         if (jenisBuku.equalsIgnoreCase("kamus")){
-            diskon = 0.1;
-            System.out.println("Masukkan jumlah buku ");
-            jumlahBuku = sc.nextInt();
+            diskon = 10;
             if (jumlahBuku > 2) {
-               diskon = 0.12;
-               System.out.println("Diskon yang anda dapat " + diskon);
-            else {
-                diskon = 0.1;
-                System.out.println("Diskon yang anda dapat " + diskon);
-            }
+               diskon += 2;
+            } else {
+                diskon = 10;
             }
         } else if (jenisBuku.equalsIgnoreCase("novel")){
-            diskon = 0.07;
-            System.out.println("Masukkan jumlah buku ");
-            jumlahBuku = sc.nextInt();
+            diskon = 7;
             if (jumlahBuku > 3) {
-                diskon = 0.09;
-                System.out.println("Diskon yang anda dapat " + diskon);
-            else {
-                
+                diskon += 2;
+            } else {
+                diskon += 10;
             }
+        } else {
+            if (jumlahBuku > 3) {
+                diskon = 5;
+            } else {
+                System.out.println("Anda tidak mendapatkan diskon");
             }
-        } 
+        }
+    } else {
+        System.out.println("Anda tidak mendapatkan diskon");
     }
-    
+    System.out.println("Total diskon yang anda dapat " + diskon + "%");
     }
 }

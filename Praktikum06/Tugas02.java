@@ -29,8 +29,8 @@ public class Tugas02 {
             diskon = 7;
             if (jumlahBuku > 3) {
                 diskon += 2;
-            } else {
-                diskon += 10;
+            } else if (jumlahBuku <= 3){
+                diskon += 1;
             }
         } else {
             if (jumlahBuku > 3) {

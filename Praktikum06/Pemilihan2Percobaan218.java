@@ -7,8 +7,8 @@ public class Pemilihan2Percobaan218 {
         Scanner sc = new Scanner (System.in);
   
         int pilihan_menu, harga;
-        String member;
-        double diskon, total_bayar;
+        String member, pembayaran;
+        double diskon, total_bayar = 0;
 
         System.out.println("-------------------------");
         System.out.println("===== MENU KAFE JTI =====");
@@ -21,6 +21,8 @@ public class Pemilihan2Percobaan218 {
         sc.nextLine();
         System.out.print("Apakah punya member (y/n) ? = ");
         member = sc.nextLine();
+        System.out.print("Masukkan metode pembayaran (cash/qris) = ");
+        pembayaran = sc.nextLine();
         System.out.println("--------------------------------------");
 
         if (member.equalsIgnoreCase("y")) {
@@ -63,13 +65,22 @@ public class Pemilihan2Percobaan218 {
             } else {
                 System.out.println("Masukkan pilihan menu dengan benar");
                 return;
-            }    
+            } 
+            
+            total_bayar = harga - (0);
 
         } else {
             System.out.println("Member tidak valid");
         }
         System.out.println("-----------------------------------------");
-        
+
+        if (pembayaran.equalsIgnoreCase("qris")) {
+            total_bayar -= 1000;
+        } else {
+            total_bayar -= 0;
+        }
+        System.out.println("Total bayar akhir = " + total_bayar);
+
         sc.close();
     }
 }

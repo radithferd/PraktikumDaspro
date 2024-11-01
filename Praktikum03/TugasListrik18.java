@@ -14,5 +14,6 @@ public class TugasListrik18 {
         tagihan = penggunaanListrik * tariflistrik;
         System.out.println("Berikut adalah tagihan listrik anda: " + tagihan);
         System.out.println("Apakah listrik lebih dari 500kWh? " + (listrikLebih < penggunaanListrik));
+        sc.close();
     }
 }

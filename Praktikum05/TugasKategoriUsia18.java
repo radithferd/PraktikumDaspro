@@ -9,7 +9,6 @@ public class TugasKategoriUsia18 {
 
         System.out.print("Masukkan usia anda: ");
         usia = sc.nextInt();
-        
-        
+    sc.close();    
     }
 }

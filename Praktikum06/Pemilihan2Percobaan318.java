@@ -35,6 +35,6 @@ public class Pemilihan2Percobaan318 {
         System.out.print("Penghasilan Bersih : " + gajiBersih);    
     } else
         System.out.print("Masukan Kategori Salah");
-        
+    sc.close();    
     }
 }

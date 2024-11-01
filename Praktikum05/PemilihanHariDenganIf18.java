@@ -26,5 +26,6 @@ public class PemilihanHariDenganIf18 {
                dayType = "Invalid Number";         
         }
         System.out.println(dayType);
+    sc.close();    
     }    
 }

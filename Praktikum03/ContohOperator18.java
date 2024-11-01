@@ -25,5 +25,6 @@ public class ContohOperator18 {
 
         i %= 4;
         System.out.println("Nilai i yang baru adalah " + i);
+    
     }
 }

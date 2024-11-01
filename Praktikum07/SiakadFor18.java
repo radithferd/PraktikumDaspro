@@ -26,5 +26,6 @@ public class SiakadFor18 {
     System.out.println("Nilai terendah: " + terendah);
     System.out.println("Mahasiswa lulus: " + lulus);
     System.out.println("Mahasiswa tidak lulus: " + tidakLulus);
+    sc.close();
     }
 }

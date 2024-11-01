@@ -17,5 +17,6 @@ public class Bank18 {
         tabunganAkhir = tabunganAwal + bunga;
         System.out.println("Bunga: " + bunga);
         System.out.println("Tabungan akhir: " + tabunganAkhir);
+        sc.close();
     }   
 }

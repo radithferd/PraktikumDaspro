@@ -43,5 +43,6 @@ public class Tugas02 {
         System.out.println("Anda tidak mendapatkan diskon");
     }
     System.out.println("Total diskon yang anda dapat " + diskon + "%");
+    sc.close();
     }
 }

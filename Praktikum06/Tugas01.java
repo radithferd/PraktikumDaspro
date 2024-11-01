@@ -30,6 +30,6 @@ public class Tugas01 {
         } else {
             System.out.println("Bilangan terbesar adalah " + bilTiga);
         }
-      
+        sc.close();    
     }
 }

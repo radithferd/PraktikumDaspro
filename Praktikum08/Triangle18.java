@@ -15,6 +15,7 @@ public class Triangle18 {
         }
         i++;
     }
+    sc.close();
     }
     
 }

@@ -13,5 +13,6 @@ public class Square18 {
         }
     System.out.println();
     }
+    sc.close();
     }    
 }

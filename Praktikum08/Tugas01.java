@@ -23,5 +23,5 @@ public class Tugas01 {
     }
     sc.close();
     }
-    
+ 
 }
